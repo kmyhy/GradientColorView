@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (GradientColor)
+@property(strong,nonatomic)CAGradientLayer* gradientBgLayer;
 /// 将渐变图层作为背景图层
 -(void)setBackgroundColors:(NSArray*)colors begin:(CGPoint)begin end:(CGPoint)end;
 /// 在指定图层插入渐变图层
 -(void)insertColors:(NSArray*)colors begin:(CGPoint)begin end:(CGPoint)end toLayerIndex:(int)index;
 /// 生成一个渐变图层
 -(CAGradientLayer*)gradientLayerWithColors:(NSArray*)colors begin:(CGPoint)begin end:(CGPoint)end frame:(CGRect)frame;
+/// 移除背景渐变图层
+-(void)removeBackgroundColors;
 @end

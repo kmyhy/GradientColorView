@@ -13,8 +13,8 @@
 		12114E842003621C002D4F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12114E832003621C002D4F37 /* Assets.xcassets */; };
 		12114E872003621C002D4F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12114E852003621C002D4F37 /* LaunchScreen.storyboard */; };
 		12114E8A2003621C002D4F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12114E892003621C002D4F37 /* main.m */; };
-		12114E9220036327002D4F37 /* UIView+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12114E9120036327002D4F37 /* UIView+GradientColor.m */; };
 		12114E9520036944002D4F37 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 12114E9420036944002D4F37 /* UIColor+Hex.m */; };
+		12F0EAAC20131C4700D9C080 /* UIView+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0EAAA20131C4700D9C080 /* UIView+GradientColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		12114E862003621C002D4F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12114E882003621C002D4F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12114E892003621C002D4F37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		12114E9020036327002D4F37 /* UIView+GradientColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GradientColor.h"; sourceTree = "<group>"; };
-		12114E9120036327002D4F37 /* UIView+GradientColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GradientColor.m"; sourceTree = "<group>"; };
 		12114E9320036944002D4F37 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		12114E9420036944002D4F37 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		12F0EAAA20131C4700D9C080 /* UIView+GradientColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GradientColor.m"; sourceTree = "<group>"; };
+		12F0EAAB20131C4700D9C080 /* UIView+GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GradientColor.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 				12114E7B2003621C002D4F37 /* AppDelegate.m */,
 				12114E9320036944002D4F37 /* UIColor+Hex.h */,
 				12114E9420036944002D4F37 /* UIColor+Hex.m */,
-				12114E9020036327002D4F37 /* UIView+GradientColor.h */,
-				12114E9120036327002D4F37 /* UIView+GradientColor.m */,
+				12F0EAAB20131C4700D9C080 /* UIView+GradientColor.h */,
+				12F0EAAA20131C4700D9C080 /* UIView+GradientColor.m */,
 				12114E7D2003621C002D4F37 /* ViewController.h */,
 				12114E7E2003621C002D4F37 /* ViewController.m */,
 				12114E802003621C002D4F37 /* Main.storyboard */,
@@ -155,7 +155,7 @@
 				12114E7F2003621C002D4F37 /* ViewController.m in Sources */,
 				12114E9520036944002D4F37 /* UIColor+Hex.m in Sources */,
 				12114E8A2003621C002D4F37 /* main.m in Sources */,
-				12114E9220036327002D4F37 /* UIView+GradientColor.m in Sources */,
+				12F0EAAC20131C4700D9C080 /* UIView+GradientColor.m in Sources */,
 				12114E7C2003621C002D4F37 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
