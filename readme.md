@@ -28,7 +28,7 @@
  
 ## 特别注意事项
 
-GradientColor 分类严重依赖 UIView 对象的 frame 进行工作。对于 frame 不确定的 UIView（比如这个 view 初始化时没有调用 initWithFrame 方法，或者不指定它的 frame 就调用 setBackgroundColors ），它无法绘制渐变背景图层。
+GradientColor 分类严重依赖 UIView 对象的 frame 进行工作。对于 frame 不确定的 UIView（比如这个 view 初始化时没有调用 initWithFrame 方法，或者使用了自动布局，在不指定视图 frame 的情况下调用 setBackgroundColors ），它无法绘制渐变背景图层。
 
 在这种情况下，你可以在需要绘制渐变背景的 View 的 **父 view** 上重写 layoutSubview 方法，然后在这个方法中调用 setBackgroundColors。
 
@@ -38,6 +38,6 @@ GradientColor 分类严重依赖 UIView 对象的 frame 进行工作。对于 fr
     [_actionButton setBackgroundColors:@[(id)[UIColor colorWithHex:0xFF6441].CGColor,(id)[UIColor colorWithHex:0xFC324E].CGColor] begin:CGPointMake(0, 0) end:CGPointMake(1, 0)];
 }
 ```
-
+> 你也可以在 view controller 的 viewDidLayoutSubviews 方法中调用 setBackgroundColors，因为 viewDidLayoutSubviews 调用时自动布局已经结束了。
 
 
