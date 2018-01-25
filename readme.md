@@ -26,3 +26,18 @@
 
 <img src="1.png" width="240"/>
  
+## 特别注意事项
+
+GradientColor 分类严重依赖 UIView 对象的 frame 进行工作。对于 frame 不确定的 UIView（比如这个 view 初始化时没有调用 initWithFrame 方法，或者不指定它的 frame 就调用 setBackgroundColors ），它无法绘制渐变背景图层。
+
+在这种情况下，你可以在需要绘制渐变背景的 View 的 **父 view** 上重写 layoutSubview 方法，然后在这个方法中调用 setBackgroundColors。
+
+```swift
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    [_actionButton setBackgroundColors:@[(id)[UIColor colorWithHex:0xFF6441].CGColor,(id)[UIColor colorWithHex:0xFC324E].CGColor] begin:CGPointMake(0, 0) end:CGPointMake(1, 0)];
+}
+```
+
+
+
